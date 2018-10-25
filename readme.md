@@ -1,15 +1,11 @@
 # Laravel Quickstart - Basic
 
-## Quck Installation
+## Run Locally
+Make sure you have [Docker Compose](https://docs.docker.com/compose/install/).
 
-    git clone https://github.com/laravel/quickstart-basic quickstart
+```console
+$ cp .env.example .env
+$ docker-compose up
+```
 
-    cd quickstart
-
-    composer install
-
-    php artisan migrate
-
-    php artisan serve
-
-[Complete Tutorial](https://laravel.com/docs/5.2/quickstart)
+Your app should now be running on http://0.0.0.0:8000/
