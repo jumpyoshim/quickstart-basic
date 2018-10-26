@@ -1,5 +1,7 @@
 FROM php:7-fpm
 
+LABEL maintainer="jumpyoshim <jumpyoshim@gmail.com>"
+
 RUN set -x \
     && apt update \
     && apt install -y --no-install-recommends \
@@ -10,10 +12,9 @@ RUN set -x \
       mysqli \
       mbstring
 
+ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
-
-RUN apt-get update && apt-get install -y wget
 
 ENV DOCKERIZE_VERSION v0.6.1
 RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
