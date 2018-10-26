@@ -10,7 +10,7 @@ services:
     build: .
     command: >
       bash -c "dockerize -wait tcp://db:3306
-      && composer install --dev --no-plugins --no-scripts
+      && composer install --no-plugins --no-scripts
       && php artisan migrate
       && php artisan serve --host=0.0.0.0 --port=8000"
     volumes:
