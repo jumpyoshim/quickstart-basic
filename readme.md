@@ -15,5 +15,5 @@ Your app should now be running on http://0.0.0.0:8000/
 
 ```console
 $ docker-compose exec app bash
-# vendor/bin/phpunit
+# composer test
 ```
