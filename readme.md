@@ -5,6 +5,7 @@ Make sure you have [Docker Compose](https://docs.docker.com/compose/install/).
 
 ```console
 $ cp .env.example .env
+$ php artisan key:generate
 $ docker-compose up
 ```
 
