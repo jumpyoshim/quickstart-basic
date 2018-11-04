@@ -1,4 +1,4 @@
-# Laravel Quickstart - Basic
+# Quickstart: Compose and Lravel
 
 ## Run Locally
 Make sure you have [Docker Compose](https://docs.docker.com/compose/install/).
